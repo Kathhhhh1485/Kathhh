@@ -180,51 +180,859 @@ header {
         margin-top: 100px;
     }
 }
-@media only screen and (max-width: 600px)
-{
+
+Conversation with Gemini
+Make the CSS file of this responsive on cellphones
+
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ma. Kathrinne Clarisse Artuz| Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+
+    <header>
+
+        <div class="logo">Ma. Kathrinne Clarisse Artuz</div>
+
+       
+
+    </header>
+
+
+
+    <main class="container">
+
+        <div class="left-panel">
+
+            <img src="/storage/emulated/0/AppDev/k3.jpg" alt="Kath Artuz Portfolio Portrait">
+
+        </div>
+
+
+
+        <div class="right-panel">
+
+            <div class="hero-title-container">
+
+                <div class="title-line-wrapper">
+
+                    <h1 class="hero-title">My</h1>
+
+                    <div class="decorative-line"></div>
+
+                </div>
+
+                <h1 class="title">Portfolio</h1>
+
+            </div>
+
+
+
+            <p class="description">
+
+                Ma. Kathrinne Clarisse A. Artuz </br>
+
+              3rd Year </br>
+
+                College of Information and Computing Sciences </br>
+
+              Lyceum of Aparri
+
+            </p>
+
+
+
+            <div class="cta-container">
+
+                <a href="Kth.html" class="btn-primary">Explore Now</a>
+
+            </div> 
+
+
+
+            <div class="footer-pagination">
+
+                <p>&copy; 2026 Ma. Kathrinne Clarisse Artuz. All Rights Reserved.</p>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+</body>
+
+</html>
+
+
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-family: 'Inter', sans-serif;
+
+}
+
+:root {
+
+    --bg-color: #efe8de;
+
+    --paper-color: #e5dac9;
+
+    --text-serif: #613b28;
+
+    --text-sans: #432a1d;
+
+    --font-serif: 'Playfair Display', serif;
+
+    --font-sans: 'Comfortaa', cursive, sans-serif;
+
+}
+
+
+
+body {
+
+    background-color: var(--bg-color);
+
+       color: var(--text-serif);
+
+    height: 100vh;
+
+    overflow: hidden;
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+
+/* --- Header Navigation --- */
+
+header {
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 30px 60px;
+
+    z-index: 10;
+
+}
+
+
+
+.logo {
+
+    font-weight: 600;
+
+    font-size: 14px;
+
+    letter-spacing: 0.5px;
+
+}
+
+
+
+nav {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 40px;
+
+}
+
+
+
+nav a {
+
+    color: #aaaaaa;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    transition: color 0.3s ease;
+
+}
+
+
+
+nav a:hover {
+
+    color: #ffffff;
+
+}
+
     
+
+
+
+/* --- Main Layout --- */
+
+.container {
+
+    display: flex;
+
+    height: 100%;
+
+    width: 100%;
+
+}
+
+
+
+/* Left Column: Image */
+
+.left-panel {
+
+    width: 45%;
+
+    height: 100%;
+
+    position: relative;
+
+    background-color: #e0e0e0;
+
+}
+
+
+
+.left-panel img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+
+
+/* Right Column: Content */
+
+.right-panel {
+
+    width: 100%;
+
+    height: 100%;
+
+    background-color: #161616;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    padding: 0 10% 0 8%;
+
+    position: relative;
+
+   
+
+}
+
+
+
+/* Heading with the line design element */
+
+.hero-title-container {
+
+    position: relative;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+.title {
+
+    font-size: 76px;
+
+    font-weight: 700;
+
+    line-height: 1.1;
+
+}
+
+
+
+/* Decorative horizontal line extending right */
+
+.title-line-wrapper {
+
+    display: flex;
+
+    align-items: center;
+
+    
+
+}
+
+
+
+.decorative-line {
+
+    flex-grow: 1;
+
+    height: 1px;
+
+    background-color: rgba(255, 255, 255, 0.4);
+
+    margin-top: 15px;
+
+}
+
+
+
+.description {
+
+    color: #888888;
+
+    font-size: 12px;
+
+    line-height: 1.8;
+
+    max-width: 480px;
+
+    margin-bottom: 40px;
+
+    letter-spacing: 0.2px;
+
+}
+
+
+
+/* --- Action Buttons --- */
+
+.cta-container {
+
+    display: flex;
+
+    margin-top: -150px;
+
+    gap: 30px;
+
+    margin-left: 450px;
+
+    
+
+}
+
+
+
+.btn-primary {
+
+    background-color: #ffffff;
+
+    color: #111111;
+
+    text-decoration: none;
+
+    padding: 14px 35px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    transition: opacity 0.3s ease;
+
+}
+
+
+
+.btn-primary:hover {
+
+    opacity: 0.9;
+
+}
+
+
+
+/* --- Footer Pagination --- */
+
+.footer-pagination {
+
+    position: absolute;
+
+    bottom: 40px;
+
+    right: 320px;
+
+    font-size: 12px;
+
+    color: #666666;
+
+    letter-spacing: 1px;
+
+}
+
+
+
+.footer-pagination span {
+
+    color: #ffffff;
+
+}
+
+
+
+/* --- Responsive View --- */
+
+@media (max-width: 900px) {
+
+    body {
+
+        overflow: auto;
+
+    }
+
+    .container {
+
+        flex-direction: column;
+
+        height: auto;
+
+    }
+
+    .left-panel, .right-panel {
+
+        width: 100%;
+
+    }
+
+    .left-panel {
+
+        height: 60vh;
+
+    }
+
+    .right-panel {
+
+        padding: 30px 40px;
+
+    }
+
+    .hero-title {
+
+        font-size: 50px;
+
+    }
+
+    .decorative-line {
+
+        display: none;
+
+    }
+
+    header {
+
+        padding: 20px 30px;
+
+    }
+
+    nav {
+
+        display: none; 
+
+    }
+
+    .footer-pagination {
+
+        position: static;
+
+        margin-top: 100px;
+
+    }
+
+}
+
+@media only screen and (max-width: 600px){
+
+    body {
+
+        overflow: auto;
+
+    }
+
+    .container {
+
+        flex-direction: column;
+
+        height: auto;
+
+    }
+
+        .cta-container {
+
+    display: flex;
+
+    margin-top: 50px;
+
+    gap: 30px;
+
+    margin-left: 50px;
+
+    
+
+}
+
+    .left-panel, .right-panel {
+
+        width: 100%;
+
+    }
+
+    .left-panel {
+
+        height: 60vh;
+
+    }
+
+    .right-panel {
+
+        padding: 30px 40px;
+
+    }
+
+    .hero-title {
+
+        font-size: 50px;
+
+    }
+
+    .decorative-line {
+
+        display: none;
+
+    }
+
+    header {
+
+        padding: 20px 30px;
+
+    }
+
+    nav {
+
+        display: none; 
+
+    }
+
+    .footer-pagination {
+
+        position: static;
+
+        margin-top: 100px;
+
+    }
+
+}
+
+Here is the updated CSS file.
+
+The biggest issues making your current mobile view look broken were hardcoded layout offsets like margin-left: 450px;, margin-top: -150px;, and right: 320px;. On smaller screens, these push your text and button completely out of frame or create weird overlapping artifacts.
+
+By removing these rigid margins inside your existing media queries and letting Flexbox do the heavy lifting, your site will adapt to small viewports.
+
+Updated style.css
+CSS
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    --bg-color: #efe8de;
+    --paper-color: #e5dac9;
+    --text-serif: #613b28;
+    --text-sans: #432a1d;
+    --font-serif: 'Playfair Display', serif;
+    --font-sans: 'Comfortaa', cursive, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-serif);
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- Header Navigation --- */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+    z-index: 10;
+}
+
+.logo {
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    color: #613b28; /* Inherits or falls back beautifully */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+nav a {
+    color: #aaaaaa;
+    text-decoration: none;
+    font-size: 13px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+/* --- Main Layout --- */
+.container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+/* Left Column: Image */
+.left-panel {
+    width: 45%;
+    height: 100%;
+    position: relative;
+    background-color: #e0e0e0;
+}
+
+.left-panel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Right Column: Content */
+.right-panel {
+    width: 55%; /* Changed to complete the 100% space correctly with left-panel */
+    height: 100%;
+    background-color: #161616;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10% 0 8%;
+    position: relative;
+}
+
+/* Heading with the line design element */
+.hero-title-container {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.hero-title, .title {
+    font-size: 76px;
+    font-weight: 700;
+    line-height: 1.1;
+    color: #613b28; /* Use fallback colors or match design */
+}
+
+/* Ensure 'My' matches the image style color */
+.hero-title {
+    color: #613b28;
+}
+
+.title {
+    color: #8c5d43; /* Matches your brown accent shade from the image */
+}
+
+/* Decorative horizontal line extending right */
+.title-line-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.decorative-line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.4);
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.description {
+    color: #888888;
+    font-size: 12px;
+    line-height: 1.8;
+    max-width: 480px;
+    margin-bottom: 40px;
+    letter-spacing: 0.2px;
+}
+
+/* --- Action Buttons --- */
+.cta-container {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px; /* Instead of destructive negative margins */
+}
+
+.btn-primary {
+    background-color: #ffffff;
+    color: #111111;
+    text-decoration: none;
+    padding: 14px 35px;
+    font-size: 13px;
+    font-weight: 600;
+    transition: opacity 0.3s ease;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn-primary:hover {
+    opacity: 0.9;
+}
+
+/* --- Footer Pagination --- */
+.footer-pagination {
+    position: absolute;
+    bottom: 40px;
+    left: 8%; /* Align nicely with content padding */
+    font-size: 11px;
+    color: #666666;
+    letter-spacing: 1px;
+}
+
+/* --- Responsive View (Tablets / Smaller Desktops) --- */
+@media (max-width: 992px) {
     body {
         overflow: auto;
+        height: auto;
     }
     .container {
         flex-direction: column;
         height: auto;
     }
-				.cta-container {
-    display: flex;
-    margin-top: 50px;
-    gap: 30px;
-    margin-left: 50px;   
-				}
-			.btn-primary {
-    margin-top:50px;
-				margin-left: 50px;
-    padding: 14px 35px;
-    font-size: 13px;
-    font-weight: 600;
-    transition: opacity 0.3s ease;
-					}
     .left-panel, .right-panel {
         width: 100%;
     }
     .left-panel {
-        height: 60vh;
+        height: 50vh;
     }
     .right-panel {
-        padding: 30px 40px;
+        padding: 60px 40px 80px 40px; /* Roomy padding */
     }
-    .hero-title {
-        font-size: 50px;
+    .title, .hero-title {
+        font-size: 56px;
     }
-    .decorative-line {
-        display: none;
-    }
-    header {
-        padding: 10px 10px;
+    .cta-container {
+        margin-left: 0;
+        margin-top: 0;
     }
     .footer-pagination {
         position: static;
-        margin-top: 100px;
+        margin-top: 40px;
     }
 }
 
+/* --- Responsive View (Cellphones) --- */
+@media only screen and (max-width: 600px) {
+    header {
+        padding: 20px;
+    }
+    
+    .logo {
+        color: #ffffff; /* Make legible over the sea image if overlaying */
+        background-color: rgba(0, 0, 0, 0.2); 
+        padding: 4px 8px;
+        border-radius: 4px;
+    }
+
+    .left-panel {
+        height: 55vh; /* Gives the beach shot a prominent visual frame */
+    }
+
+    .right-panel {
+        padding: 40px 24px; /* Tighten margins up safely for tiny width viewports */
+    }
+
+    .title, .hero-title {
+        font-size: 48px; /* Scales down elegantly so 'Portfolio' doesn't clip */
+    }
+    
+    .decorative-line {
+        display: none; /* Keep layout lean and clutter-free on tiny screens */
+    }
+
+    .cta-container {
+        margin-left: 0; /* Reset desktop positioning fully */
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .btn-primary {
+        width: 100%; /* Spans full width like a modern clean mobile app interaction button */
+        padding: 16px;
+    }
+
+    .footer-pagination {
+        position: static;
+        margin-top: 40px;
+        font-size: 10px;
+        line-height: 1.5;
+    }
+}
