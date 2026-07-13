@@ -1,0 +1,306 @@
+/* --- Global Resets & Variables --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-color: #efe8de;
+    --paper-color: #e5dac9;
+    --text-serif: #613b28;
+    --text-sans: #432a1d;
+    --font-serif: 'Playfair Display', serif;
+    --font-sans: 'Comfortaa', cursive, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: var(--font-serif);
+    color: var(--text-serif);
+    display: flex;
+    min-height: 100%;
+    padding: 20px;
+}
+/* --- Navigation Bar Styles --- */
+.navbar {
+    width: 100%;height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 30px;
+    background-color: #111111; /* Matches the dark theme */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #aaaaaa;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+
+/* Hover and Active state */
+.nav-links a:hover,
+.nav-links a.active {
+    color: #ffffff;
+}
+
+
+
+
+/* Right Column: Content */
+.right-panel {
+    width: 0;
+    height: 0;
+    background-color: #161616;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10% 0 8%;
+    position: relative;
+   
+}
+
+
+
+/* --- Main Layout Container --- */
+.scrapbook-container {
+    background-color: var(--bg-color);
+    width: 100%;
+    max-width: 800px;
+    padding: 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow: hidden;
+    top: 25px;
+}
+
+/* --- Header Styling --- */
+.profile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.basic-info {
+    flex: 1;
+    min-width: 280px;
+    text-align: right;
+}
+
+.basic-info h1 {
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.basic-info .name {
+    font-family: var(--font-sans);
+    font-size: 1.8rem;
+    color: var(--text-sans);
+    margin-bottom: 20px;
+}
+
+.stats-list {
+    list-style: none;
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+.stats-list strong {
+    font-weight: 400;
+}
+
+/* --- Reusable Photo Frames (Polaroid/Scrapbook Style) --- */
+.photo-frame {
+    background: #fff;
+    padding: 12px 12px 25px 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.photo-frame img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.main-photo {
+    width: 280px;
+    transform: rotate(-4deg);
+}
+
+/* --- Content Grid --- */
+.content-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 50px;
+}
+
+/* --- About Me Box --- */
+.about-me-box {
+    background-color: var(--paper-color);
+    padding: 30px;
+    border-radius: 4px;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.05);
+  
+    position: relative; /* Useful for placing decorative absolute elements if needed later */
+}
+
+.about-me-box h2 {
+    font-family: var(--font-sans);
+    color: var(--text-sans);
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.about-me-box p {
+    font-size: 1.15rem;
+    line-height: 1.7;
+}
+
+/* --- Collage Side Photos --- */
+.collage-photos {
+    position: relative;
+    height: 350px;
+}
+
+.photo1 {
+    width: 180px;
+    position: absolute;
+    top: -40px;
+    right: -25px;
+    transform: rotate(7deg);
+    z-index: 1;
+}
+
+.photo2 {
+    width: 190px;
+    position: absolute;
+    bottom: 0;
+    left: -50px;
+    transform: rotate(-7deg);
+    z-index: 2;
+}
+
+/* --- Favorite Colors Section --- */
+.colors-section {
+    padding-top: 20px;
+}
+
+.colors-section h2 {
+    font-family: var(--font-sans);
+    color: var(--text-sans);
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.color-palette {
+    display: flex;
+    gap: 10px;
+}
+
+.color-heart {
+    font-size: 2.5rem;
+    cursor: default;
+}
+
+/* Accurate HEX mappings from your palette image */
+.color-brown { color: #a3755c; }
+.color-green { color: #436d14; }
+.color-tan { color: black; }
+.color-cream { color: #ded9ca; }
+
+/* --- Facts Section --- */
+.facts-section {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+}
+
+.facts-section h2 {
+    font-family: var(--font-sans);
+    color: var(--text-sans);
+    font-size: 2rem;
+    margin-bottom: 15px;
+   margin-left: 30px;
+}
+
+.facts-section p {
+    font-size: 15px;;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+/* --- Responsive Adjustments for Mobile Screens --- */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 20px 30px;
+    }
+
+    /* Hide standard horizontal links on mobile layout */
+    .nav-links {
+        display: none; 
+    }
+    .profile-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+   
+    .basic-info {
+        text-align: center;
+    }
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+    .collage-photos {
+        height: 280px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    .photo1, .photo2 {
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .facts-section {
+        
+    }
+    
+}

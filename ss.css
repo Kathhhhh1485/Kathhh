@@ -1,0 +1,145 @@
+
+/* ==========================================================================
+   1. Reset & Global Base Styles
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    --bg-color: #efe8de;
+    --text-serif: #613b28;
+    --text-sans: #432a1d;
+    --font-serif: 'Playfair Display', serif;
+    --font-sans: 'Comfortaa', cursive, sans-serif;
+}
+body {
+    background-color: var(--bg-color);
+    font-family: var(--font-serif);
+    color: var(--text-serif);
+    display: flex;
+    min-height: 100%;
+    padding: 20px;
+}
+/* --- Navigation Bar Styles --- */
+.navbar {
+    width: 100%;height: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 30px;
+    background-color: #111111; /* Matches the dark theme */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #aaaaaa;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+
+/* Hover and Active state */
+.nav-links a:hover,
+.nav-links a.active {
+    color: #ffffff;
+}
+* --- Content Grid --- */
+.content-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 50px;
+    margin-top: 1000px;
+}
+
+/* ==========================================================================
+   3. Content Blocks & Direct Links Mechanics
+   ========================================================================== */
+
+.info-block h3 {
+    margin-top: 100px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #555555;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Active redirection link structure */
+.direct-link {
+    color: #111112;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: color 0.3s ease;
+}
+
+/* Hidden arrow style element */
+.direct-link .arrow {
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: all 0.3s ease;
+    font-size: 18px;
+    color: #aaaaaa;
+}
+
+/* ==========================================================================
+   4. Hover Transitions
+   ========================================================================== */
+.direct-link:hover {
+    color: #aaaaaa;
+}
+
+/* Reveal and nudge arrow smoothly when hovering over the link */
+.direct-link:hover .arrow {
+    opacity: 1;
+    transform: translateX(0);
+    color: #ffffff;
+}
+
+/* ==========================================================================
+   5. Responsive View (Mobile & Tablet)
+   ========================================================================== */
+@media (max-width: 850px) {
+
+    
+    .direct-link {
+        font-size: 18px;
+    }
+}
+
+```

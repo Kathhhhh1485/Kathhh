@@ -1,0 +1,203 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+:root {
+    --bg-color: #efe8de;
+    --paper-color: #e5dac9;
+    --text-serif: #613b28;
+    --text-sans: #432a1d;
+    --font-serif: 'Playfair Display', serif;
+    --font-sans: 'Comfortaa', cursive, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+       color: var(--text-serif);
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- Header Navigation --- */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+    z-index: 10;
+}
+
+.logo {
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+nav a {
+    color: #aaaaaa;
+    text-decoration: none;
+    font-size: 13px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+    
+
+/* --- Main Layout --- */
+.container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+/* Left Column: Image */
+.left-panel {
+    width: 45%;
+    height: 100%;
+    position: relative;
+    background-color: #e0e0e0;
+}
+
+.left-panel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Right Column: Content */
+.right-panel {
+    width: 100%;
+    height: 100%;
+    background-color: #161616;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10% 0 8%;
+    position: relative;
+   
+}
+
+/* Heading with the line design element */
+.hero-title-container {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.title {
+    font-size: 76px;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+/* Decorative horizontal line extending right */
+.title-line-wrapper {
+    display: flex;
+    align-items: center;
+    
+}
+
+.decorative-line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.4);
+    margin-top: 15px;
+}
+
+.description {
+    color: #888888;
+    font-size: 12px;
+    line-height: 1.8;
+    max-width: 480px;
+    margin-bottom: 40px;
+    letter-spacing: 0.2px;
+}
+
+/* --- Action Buttons --- */
+.cta-container {
+    display: flex;
+    margin-top: -150px;
+    gap: 30px;
+    margin-left: 450px;
+}
+
+.btn-primary {
+    background-color: #ffffff;
+    color: #111111;
+    text-decoration: none;
+    padding: 14px 35px;
+    font-size: 13px;
+    font-weight: 600;
+    transition: opacity 0.3s ease;
+}
+
+.btn-primary:hover {
+    opacity: 0.9;
+}
+
+/* --- Footer Pagination --- */
+.footer-pagination {
+    position: absolute;
+    bottom: 40px;
+    right: 320px;
+    font-size: 12px;
+    color: #666666;
+    letter-spacing: 1px;
+}
+
+.footer-pagination span {
+    color: #ffffff;
+}
+
+/* --- Responsive View --- */
+@media (max-width: 900px) {
+    body {
+        overflow: auto;
+    }
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+    .left-panel, .right-panel {
+        width: 100%;
+    }
+    .left-panel {
+        height: 60vh;
+    }
+    .right-panel {
+        padding: 30px 40px;
+    }
+    .hero-title {
+        font-size: 50px;
+    }
+    .decorative-line {
+        display: none;
+    }
+    header {
+        padding: 20px 30px;
+    }
+    nav {
+        display: none; 
+    }
+    .footer-pagination {
+        position: static;
+        margin-top: 100px;
+    }
+}
+
