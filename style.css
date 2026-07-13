@@ -200,4 +200,39 @@ nav a:hover {
         margin-top: 100px;
     }
 }
+@media only screen and (min-width: 600px){
+    {
+    body {
+        overflow: auto;
+    }
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+    .left-panel, .right-panel {
+        width: 100%;
+    }
+    .left-panel {
+        height: 60vh;
+    }
+    .right-panel {
+        padding: 30px 40px;
+    }
+    .hero-title {
+        font-size: 50px;
+    }
+    .decorative-line {
+        display: none;
+    }
+    header {
+        padding: 20px 30px;
+    }
+    nav {
+        display: none; 
+    }
+    .footer-pagination {
+        position: static;
+        margin-top: 100px;
+    }
+}
 
