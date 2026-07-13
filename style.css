@@ -209,13 +209,20 @@ nav a:hover {
         flex-direction: column;
         height: auto;
     }
-.cta-container {
+				.cta-container {
     display: flex;
     margin-top: 50px;
     gap: 30px;
-    margin-left: 50px;
-    
-}
+    margin-left: 50px;   
+				}
+			.btn-primary {
+    margin-top:50px;
+				margin-left: 50px;
+    padding: 14px 35px;
+    font-size: 13px;
+    font-weight: 600;
+    transition: opacity 0.3s ease;
+					}
     .left-panel, .right-panel {
         width: 100%;
     }
