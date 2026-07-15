@@ -225,7 +225,7 @@ nav a:hover {
 								    }
 
     .title, .hero-title {
-        font-size: 48px; /* Scales down elegantly so 'Portfolio' doesn't clip */
+        font-size: 38px; /* Scales down elegantly so 'Portfolio' doesn't clip */
     }
     
     .decorative-line {
@@ -243,7 +243,6 @@ nav a:hover {
         }
 
     .footer-pagination {
-        position: static;
         margin-top: 1px;
         font-size: 10px;
         line-height: 1.5;
