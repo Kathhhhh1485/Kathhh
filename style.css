@@ -223,7 +223,7 @@ nav a:hover {
 
     .right-panel {
         padding: 40px 24px; /* Tighten margins up safely for tiny width viewports */
-								margin-top: 1px;
+								margin-top: -5px;
     }
 
     .title, .hero-title {
@@ -236,13 +236,12 @@ nav a:hover {
 
     .cta-container {
         margin-left: 0; /* Reset desktop positioning fully */
-        margin-top: 20px;
+        margin-top: 5px;
         width: 100%;
     }
 
     .btn-primary {
         width: 50%; /* Spans full width like a modern clean mobile app interaction button */
-								margin-top: 1px;
 								margin-left: center;
         padding: 16px;
     }
