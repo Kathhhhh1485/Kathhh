@@ -261,8 +261,8 @@ body {
     line-height: 1.6;
 }
 
-/* --- Responsive Adjustments for Mobile Screens --- */
-@media (max-width: 768px) {
+/* --- Responsive View (Tablets / Smaller Desktops) --- */
+@media (max-width: 992px) {
     .navbar {
         padding: 20px 30px;
     }
@@ -303,4 +303,49 @@ body {
         
     }
     
+}
+@media only screen and (max-width: 600px) {
+
+
+.navbar {
+        padding: 20px 30px;
+    }
+
+    /* Hide standard horizontal links on mobile layout */
+    .nav-links {
+        display: none; 
+    }
+    .profile-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+   
+    .basic-info {
+        text-align: center;
+    }
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+    .collage-photos {
+        height: 280px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    .photo1, .photo2 {
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .facts-section {
+        
+    }
+
+
 }
