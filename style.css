@@ -1025,7 +1025,8 @@ nav a:hover {
     }
 
     .btn-primary {
-        width: 100%; /* Spans full width like a modern clean mobile app interaction button */
+        width: 50%; /* Spans full width like a modern clean mobile app interaction button */
+								margin-top: 50px;
         padding: 16px;
     }
 
