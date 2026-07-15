@@ -222,7 +222,7 @@ nav a:hover {
 
     .right-panel {
         padding: 40px 24px; /* Tighten margins up safely for tiny width viewports */
-								margin-top: -5px;
+								margin-top: -50px;
     }
 
     .title, .hero-title {
