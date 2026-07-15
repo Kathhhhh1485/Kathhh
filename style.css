@@ -222,7 +222,7 @@ nav a:hover {
 
     .right-panel {
         padding: 40px 24px; /* Tighten margins up safely for tiny width viewports */
-								margin-top: -50px;
+								margin-top: -500px;
     }
 
     .title, .hero-title {
@@ -235,7 +235,7 @@ nav a:hover {
 
     .cta-container {
         margin-left: center; /* Reset desktop positioning fully */
-        margin-top: -5px;
+        margin-top: -25x;
         width: 100%;
     }
 
@@ -245,7 +245,7 @@ nav a:hover {
 
     .footer-pagination {
         position: static;
-        margin-top: 10px;
+        margin-top: 1px;
         font-size: 10px;
         line-height: 1.5;
     }
