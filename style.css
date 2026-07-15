@@ -212,7 +212,6 @@ nav a:hover {
     
     .logo {
         color: #ffffff; /* Make legible over the sea image if overlaying */
-        
         padding: 4px 8px;
         border-radius: 4px;
     }
@@ -235,14 +234,13 @@ nav a:hover {
     }
 
     .cta-container {
-        margin-left: 0; /* Reset desktop positioning fully */
+        margin-left: center; /* Reset desktop positioning fully */
         margin-top: 5px;
         width: 100%;
     }
 
     .btn-primary {
         width: 50%; /* Spans full width like a modern clean mobile app interaction button */
-								margin-left: center;
         padding: 16px;
     }
 
