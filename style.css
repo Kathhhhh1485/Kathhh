@@ -221,9 +221,8 @@ nav a:hover {
     }
 
     .right-panel {
-        padding: 40px 24px; /* Tighten margins up safely for tiny width viewports */
-								margin-top: -500px;
-    }
+        padding: 10px 14px; /* Tighten margins up safely for tiny width viewports */
+								    }
 
     .title, .hero-title {
         font-size: 48px; /* Scales down elegantly so 'Portfolio' doesn't clip */
