@@ -308,7 +308,7 @@ body {
 
 
 .navbar {
-        padding: 20px 30px;
+        padding: 5px 0px;
     }
 
     /* Hide standard horizontal links on mobile layout */
@@ -333,8 +333,7 @@ body {
     .collage-photos {
         height: 280px;
         display: flex;
-        justify-content: center;
-        gap: 20px;
+        gap: 10px;
     }
     .photo1, .photo2 {
         position: relative;
