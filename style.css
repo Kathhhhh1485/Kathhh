@@ -235,18 +235,17 @@ nav a:hover {
 
     .cta-container {
         margin-left: center; /* Reset desktop positioning fully */
-        margin-top: 5px;
+        margin-top: -5px;
         width: 100%;
     }
 
     .btn-primary {
-        width: 50%; /* Spans full width like a modern clean mobile app interaction button */
-        padding: 16px;
-    }
+        width: 100%; /* Spans full width like a modern clean mobile app interaction button */
+        }
 
     .footer-pagination {
         position: static;
-        margin-top: 40px;
+        margin-top: 10px;
         font-size: 10px;
         line-height: 1.5;
     }
