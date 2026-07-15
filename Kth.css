@@ -308,7 +308,7 @@ body {
 
 
 .navbar {
-        padding: 5px 0px;
+        
     }
 
     /* Hide standard horizontal links on mobile layout */
@@ -317,7 +317,7 @@ body {
     }
     .profile-header {
         flex-direction: column;
-        text-align: center;
+        
     }
     .container {
         flex-direction: column;
@@ -325,7 +325,7 @@ body {
     }
    
     .basic-info {
-        text-align: center;
+        
     }
     .content-grid {
         grid-template-columns: 1fr;
